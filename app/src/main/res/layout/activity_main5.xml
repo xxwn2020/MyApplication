@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="400dip"
+        android:layout_above="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="17dp">
+        <TextView
+            android:layout_width="300dip"
+            android:layout_height="350dip"
+            android:background="@drawable/textview_border"
+            android:layout_gravity="center_horizontal"
+            android:text="The Quick Brown Fox  Jumps Over The Lazy Dog"
+            android:id="@+id/textView3"
+            android:layout_marginTop="19dp"
+            android:layout_below="@+id/imageButton2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </ScrollView>
+    <ImageButton
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        app:srcCompat="@drawable/mic"
+        android:id="@+id/mictest"
+        android:clickable="false"
+        android:longClickable="false"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:scaleType="centerCrop"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/textView" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info"
+        android:text="info"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp" />
+
+    <ImageButton
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        app:srcCompat="@drawable/mic"
+        android:id="@+id/tts"
+        android:clickable="false"
+        android:longClickable="false"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:baselineAlignBottom="false"
+        android:scaleType="centerCrop"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/info"
+        android:layout_alignEnd="@+id/info" />
+
+    <ImageButton
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        android:id="@+id/stt"
+        android:src="@drawable/mic"
+        android:clickable="false"
+        android:longClickable="false"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:baselineAlignBottom="false"
+        android:scaleType="centerCrop"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/tts"
+        android:layout_toStartOf="@+id/tts"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp" />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="setting"
+        android:id="@+id/miansetting"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/info"
+        android:layout_alignRight="@+id/info"
+        android:layout_alignEnd="@+id/info" />
+
+</RelativeLayout>

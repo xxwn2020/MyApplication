@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+   >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:id="@+id/startstt"
+        android:background="#fc0303"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="END"
+        android:id="@+id/endstt"
+        android:background="#fc0303"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="35dp"
+        android:layout_marginEnd="35dp" />
+
+    <TextView
+        android:text="TextView1111111111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_border"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/startstt"
+        android:layout_toEndOf="@+id/startstt"
+        android:id="@+id/textView3" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="400dip"
+        android:layout_above="@+id/startstt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="17dp">
+    <TextView
+        android:layout_width="300dip"
+        android:layout_height="400dip"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/textview_border"
+        android:text="The Quick Brown Fox  Jumps Over The Lazy Dog"
+        android:id="@+id/textView2"
+        android:layout_marginTop="19dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp" />
+     </ScrollView>
+</RelativeLayout>
+
+
+
